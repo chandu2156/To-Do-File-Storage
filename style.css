@@ -1,0 +1,132 @@
+/* style for to-do-app*/
+body {
+  background: linear-gradient(135deg, #ffb347, #ffcc33);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  width: 400px;
+  text-align: center;
+}
+
+h1 {
+  color: #ff6600;
+  margin-bottom: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h3 {
+  color: #444;
+  margin-top: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input[type="text"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ff9900;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+button:hover {
+  background-color: #e65c00;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+li {
+  background: #fff3cd;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+  position: relative;
+}
+
+.file-preview {
+  margin-top: 5px;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.file-preview:hover {
+  transform: scale(1.02);
+}
+
+iframe {
+  border: none;
+  width: 100%;
+  height: 150px;
+  border-radius: 6px;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 5px 10px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}
+
+.file-link {
+  color: #ff6600;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.file-link:hover {
+  text-decoration: underline;
+}
